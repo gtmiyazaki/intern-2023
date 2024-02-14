@@ -13,6 +13,7 @@ const weather = {};
 
 weather.temperature = {
     unit : "celsius"
+    
 }
 
 // APP CONSTS AND VARS
@@ -23,6 +24,7 @@ const key = "82005d27a116c2880c8f0fcb866998a0";
 // CHECK IF BROWSER SUPPORTS GEOLOCATION
 if('geolocation' in navigator){
     navigator.geolocation.getCurrentPosition(setPosition, showError);
+    console.log("変更しました");
 }else{
     notificationElement.style.display = "block";
     notificationElement.innerHTML = "<p>Browser doesn't Support Geolocation</p>";
